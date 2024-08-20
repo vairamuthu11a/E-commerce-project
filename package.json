@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "nodemon backend/app.js",
+    "seeder": "node backend/utils/seeder.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "G vairamuthu",
