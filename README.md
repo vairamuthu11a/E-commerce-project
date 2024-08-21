@@ -1,17 +1,17 @@
 # Vcart Including HTTP REQUEST
 #### This response outlines the development of an e-commerce website using the MERN (MongoDB, Express.js, React, Node.js) stack. The website will enable users to search for specific products, add items to their carts, calculate subtotals, place orders, receive order confirmation notifications, and efficiently manage product stocks through a seeder command.
 
-## DATABASE:
-### Mongo DB ATLAS cloud
+### DATABASE:
+#### Mongo DB ATLAS cloud
 
-## Backend Server Technologies:
-###  Node Js
-### Express Js
+### Backend Server Technologies:
+####  Node Js
+#### Express Js
 
-## Front-end Technologies:
-### HTML5
-### BOOTSTRAP5
-## REACT JS
+### Front-end Technologies:
+#### HTML5
+#### BOOTSTRAP5
+#### REACT JS
 
 ## Backend Development (Node.js, Express.js, MongoDB)
 
