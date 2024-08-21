@@ -10,7 +10,7 @@ you can add a Stocks to Database through Seeder command.
 ## Mongo DB ATLAS cloud
 
 # Backend Server Technologies:
-## Node Js
+## - Node Js
 ## Express Js
 
 # Front-end Technologies:
