@@ -24,7 +24,7 @@ if (process.env.NODE_ENV == 'production') {
     });
 }
 
-app.listen(process.env.PORT, () => {
-    console.log(`Server listening to Port ${process.env.PORT} in ${process.env.NODE_ENV}`);
+app.listen(process.env.PORT || 8000, () => {
+    console.log(`Server listening to Port ${process.env.PORT || 8000} in ${process.env.NODE_ENV}`);
 
 });
