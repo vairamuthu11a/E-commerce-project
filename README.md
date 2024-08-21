@@ -1,4 +1,4 @@
-# Vcart Including HTTP REQUEST
+## Vcart Mini-Ecommerce project
 #### This response outlines the development of an e-commerce website using the MERN (MongoDB, Express.js, React, Node.js) stack. The website will enable users to search for specific products, add items to their carts, calculate subtotals, place orders, receive order confirmation notifications, and efficiently manage product stocks through a seeder command.
 
 ### DATABASE:
