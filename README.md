@@ -6,16 +6,16 @@ you can order the products.
 you can see  order is successfull notification in top .
 you can add a Stocks to Database through Seeder command.
 
-# DATABASE:
-## Mongo DB ATLAS cloud
+## DATABASE:
+### Mongo DB ATLAS cloud
 
-# Backend Server Technologies:
-## - Node Js
-## Express Js
+## Backend Server Technologies:
+###  Node Js
+### Express Js
 
-# Front-end Technologies:
-## HTML5
-## BOOTSTRAP5
+## Front-end Technologies:
+### HTML5
+### BOOTSTRAP5
 ## REACT JS
 
 
