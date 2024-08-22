@@ -64,6 +64,7 @@
 - Use the npm run build command to create the optimized frontend build files.
 - Copy Build Files:
 - Copy the contents of the build directory from the frontend project to a designated directory within the server-side application.
+- In single localhost:8000
 
 ### Serve Static Files:
 
