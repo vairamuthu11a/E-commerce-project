@@ -1,11 +1,10 @@
-
 const express = require("express");
 const app = express();
 const dotenv = require("dotenv");
 const path = require("path");
 const cors = require("cors");
 const connectDatabase = require("./config/connectDatabase");
-dotenv.config({path: path.join(__dirname, "config", "config.env")})
+dotenv.config({ path: path.join(__dirname, "config", "config.env") });
 
 const product = require("./routes/product");
 const order = require("./routes/order");
@@ -17,14 +16,17 @@ app.use(cors());
 app.use("/api/v1/", product);
 app.use("/api/v1/", order);
 
-if (process.env.NODE_ENV == 'production') {
-    app.use(express.static(path.join(__dirname, '..', 'frontend',  'build')));
-    app.get('*', (req, res) => {
-        res.sendFile(path.resolve(__dirname, '..', 'frontend', 'build', 'index.html'))
-    });
+if (process.env.NODE_ENV == "production") {
+  app.use(express.static(path.join(__dirname, "..", "frontend", "build")));
+  app.get("*", (req, res) => {
+    res.sendFile(
+      path.resolve(__dirname, "..", "frontend", "build", "index.html")
+    );
+  });
 }
 
 app.listen(process.env.PORT, () => {
-    console.log(`Server listening to Port ${process.env.PORT} in ${process.env.NODE_ENV}`);
-
+  console.log(
+    `Server listening to Port ${process.env.PORT} in ${process.env.NODE_ENV}`
+  );
 });

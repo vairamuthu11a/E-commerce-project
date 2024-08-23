@@ -1,18 +1,18 @@
 
 import { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
-import {toast} from "react-toastify";
+import { toast } from "react-toastify";
 
 export default function Cart({ cartItems, setCartitems }) {
 
     const [complete, setComplete] = useState(false);
 
     function increaseQty(item) {
-        if (item.product.stock == item.qty) {
+        if (item.product.stock === item.qty) {
             return;
         }
         const updatedItems = cartItems.map((i) => {
-            if (i.product._id == item.product._id) {
+            if (i.product._id === item.product._id) {
                 i.qty++
             }
             return i;
@@ -24,7 +24,7 @@ export default function Cart({ cartItems, setCartitems }) {
     function decreaseQty(item) {
         if (item.qty > 1) {
             const updatedItems = cartItems.map((i) => {
-                if (i.product._id == item.product._id) {
+                if (i.product._id === item.product._id) {
                     i.qty--
                 }
                 return i;
@@ -39,8 +39,8 @@ export default function Cart({ cartItems, setCartitems }) {
             if (i.product._id !== item.product._id) {
                 return true;
             }
-
-        })
+         return  false
+        });
         setCartitems(updatedItems)
     }
 
@@ -114,8 +114,8 @@ export default function Cart({ cartItems, setCartitems }) {
                 </div>
             </div>
         </div>
-    </Fragment> : (!complete ? <h2 className="mt-5">Your Cart is Empty</h2> 
-    : <Fragment><h2 className="mt-5">Order complete!</h2>
-    <p>Your Order has been placed successfully.</p>
-    </Fragment>)
+    </Fragment> : (!complete ? <h2 className="mt-5">Your Cart is Empty</h2>
+        : <Fragment><h2 className="mt-5">Order complete!</h2>
+            <p>Your Order has been placed successfully.</p>
+        </Fragment>)
 }
